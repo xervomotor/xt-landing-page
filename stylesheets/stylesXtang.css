@@ -2,6 +2,10 @@
     box-sizing: border-box;
   }
   
+#aboutme {
+  text-align: end;
+}
+
   body {
     font-family: Arial;
     margin: 0;
@@ -19,23 +23,9 @@
     padding: 2px;
   }
 
-  .selectBW a{
-    color: #ffffff;
-    font-size: 80px;
-    text-decoration: none;
-  }
-
-  .selectBW a:hover {
-    transform: rotate(-10deg);
-  }
-
-  a.selectBW:active {
-    transform: rotate(-10deg) translate(0, 2px);
-  }
-
   .navbar {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     text-align: center;
   }
   
@@ -55,6 +45,7 @@
   .side {
     flex: 30%;
     padding: 20px;
+    border-right: 3px solid black;
   }
 
   .main {
@@ -79,12 +70,44 @@ a.activeTab {
   transform: rotate(10deg);
 }
 
-img {
+#avatar {
   height: auto; 
-  padding: 10px;
-  max-width: 240px;
+  max-width: 220px;
+  padding: 6px;
   border-radius: 50%;
   border: 3px solid black;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: black; 
+  font-size: 30px;
+  cursor: pointer; 
+  position: relative;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.btn:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */

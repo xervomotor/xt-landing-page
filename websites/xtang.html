@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Note -->
@@ -34,15 +38,24 @@
 
     <div class="header">
       <nav class="navbar">
-        <a href="./tang.html">Home</a>
-        <a href="../index.html">Back</a>
+        <button
+          onclick="location.href='../index.html'"
+          type="button"
+          class="btn"
+        >
+          <i class="fa fa-home"></i>
+        </button>
       </nav>
     </div>
 
     <div class="row">
       <div class="side">
-        <h2>About Me</h2>
-        <img src="../images/avatar.JPG" alt="my-pic" class="avatar" />
+        <div id="aboutme">
+          <h2>About Me</h2>
+        </div>
+        <div class="container">
+          <img id="avatar" src="../images/avatar.JPG" alt="my-pic" />
+        </div>
         <p>texts</p>
       </div>
       <div class="main">
