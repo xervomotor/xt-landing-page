@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+
+  h4.banner {
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-size:smaller;
+    line-height: 1.5em;
+    padding: 0;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 2px;
+  }
+
+  .selectBW a{
+    color: #ffffff;
+    font-size: 80px;
+    text-decoration: none;
+  }
+
+  .selectBW a:hover {
+    transform: rotate(-10deg);
+  }
+
+  a.selectBW:active {
+    transform: rotate(-10deg) translate(0, 2px);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+ 
+  .side {
+    flex: 30%;
+    padding: 20px;
+  }
+
+  .main {
+    flex: 70%;
+    padding: 20px;
+  }
+
+  .fakeimg {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+
+a.activeTab {
+  transform: rotate(10deg);
+}
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
